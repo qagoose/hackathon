@@ -3,7 +3,7 @@ package com.qagoose.hackathon.traditional;
 import com.qagoose.hackathon.traditional.builders.LogInAction;
 import org.junit.jupiter.api.Test;
 
-public class LoginTest extends BaseTest {
+public class LoginTest extends TraditionalTest {
     @Test
     public void loginFormShouldMatchDesign() {
         // Not going to do this one.  To hook up a bunch of checks for elements being on the page is going to take

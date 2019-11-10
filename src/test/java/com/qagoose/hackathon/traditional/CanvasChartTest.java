@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 
 import java.io.IOException;
 
-public class CanvasChartTest extends BaseTest {
+public class CanvasChartTest extends TraditionalTest {
 
     @BeforeEach
     public void getToCompareExpensesPage() throws IOException, InterruptedException {

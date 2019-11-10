@@ -1,10 +1,13 @@
-package com.qagoose.hackathon.traditional;
+package com.qagoose.hackathon.visual;
 
+import com.qagoose.hackathon.traditional.TraditionalTest;
 import com.qagoose.hackathon.traditional.builders.LogInAction;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInfo;
 
-public class DynamicContentTest extends TraditionalTest {
+public class DynamicContentTest extends VisualTest {
     @BeforeEach
     public void logIn() {
         // Need to go to a different login page
@@ -21,8 +24,10 @@ public class DynamicContentTest extends TraditionalTest {
     }
 
     @Test
-    public void pageShouldHaveTwoAds() {
-        hack.pages.dashboardPage.checkAdOneIsPresent();
-        hack.pages.dashboardPage.checkAdTwoIsPresent();
+    @DisplayName("Dashboard should show two ads")
+    public void pageShouldHaveTwoAds(TestInfo testInfo) {
+        hack.eyesHelper.startEyes(testInfo.getDisplayName());
+        hack.eyes.checkWindow("two_ads");
+        hack.eyesHelper.stopEyes();
     }
 }

@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import java.io.FileNotFoundException;
 import java.util.HashMap;
 
-public class TableSortTest extends BaseTest {
+public class TableSortTest extends TraditionalTest {
     @BeforeEach
     public void logIn() {
         hack.pages.loginPage.logIn(
