@@ -9,7 +9,7 @@ import org.junit.jupiter.api.BeforeEach;
 public class VisualTest {
     private static BatchInfo batch;
     public static final String APP_NAME = "Hackathon";
-    private static final String HACKATHON_URL = "https://demo.applitools.com/hackathon.html";
+    private static final String HACKATHON_URL = "https://demo.applitools.com/hackathonV2.html";
     protected BaseDriver baseDriver;
     public HackathonVisual hack;
 

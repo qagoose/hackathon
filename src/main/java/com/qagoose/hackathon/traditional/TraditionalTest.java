@@ -5,7 +5,7 @@ import org.junit.jupiter.api.BeforeEach;
 
 public class TraditionalTest {
     protected BaseDriver baseDriver;
-    private static final String HACKATHON_URL = "https://demo.applitools.com/hackathon.html";
+    private static final String HACKATHON_URL = "https://demo.applitools.com/hackathonV2.html";
     public Hackathon hack;
 
     @BeforeEach

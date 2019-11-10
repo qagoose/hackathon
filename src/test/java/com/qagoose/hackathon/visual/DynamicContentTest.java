@@ -11,7 +11,7 @@ public class DynamicContentTest extends VisualTest {
     @BeforeEach
     public void logIn() {
         // Need to go to a different login page
-        baseDriver.getDriver().get("https://demo.applitools.com/hackathon.html?showAd=true");
+        baseDriver.getDriver().get("https://demo.applitools.com/hackathonV2.html?showAd=true");
 
         hack.pages.loginPage.logIn(
                 LogInAction
